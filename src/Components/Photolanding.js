@@ -3,6 +3,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 function Photolanding() {
+  // let encodedpic = encodeURI(pic);
   return (
     <div className="phlan">
       <div className="photo1">
@@ -30,6 +31,8 @@ function Photolanding() {
         ></img>
       </div>
     </div>
+
+    
   );
 }
 

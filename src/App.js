@@ -4,18 +4,28 @@ import Landingpage from "./Components/Landingpage";
 import Photolanding from "./Components/Photolanding";
 import Aboutme from "./Components/Aboutme";
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [photolanding, setPhotolanding] = useState([]);
+  const [aboutme, setAboutme] = useState([]);
+
   return (
     <div className="app">
-      <Landingpage />
       <Switch>
+        <Route exact path="/landingpage">
+          <Landingpage />
+        </Route>
+
+        <Route exact path="/photography">
+          <Photolanding />
+        </Route>
 
         <Route
           exact
-          path="/Photoland"
+          path="/about"
           render={() => {
-            return <Photolanding photoLand={photolanding} />;
+            return <Aboutme aboutme={aboutme} />;
           }}
         />
       </Switch>
