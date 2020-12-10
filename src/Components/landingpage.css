@@ -1,0 +1,14 @@
+.header {
+    margin-left: 38px;
+}
+li{
+    list-style-type: none;
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+
+}
