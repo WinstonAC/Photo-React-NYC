@@ -1,24 +1,36 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./landingpage.css";
 
-function Landingpage() {
+export default function Landingpage() {
   return (
     <div className="body">
       <div className="titles">
-        <div className="header">
-          <h3>Benjamin White Photogrpahy</h3>
-        </div>
+        <div className="header"></div>
 
         <div className="menu-container">
           <ul>
-            <li>Photogrpahy</li>
-            <li>About Me</li>
-            <li>Events</li>
+            <Link
+              to="/photolanding"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <li>Photogrpahy</li>
+            </Link>
+            <Link
+              to="/aboutme"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <li>About Me</li>
+            </Link>
+            <Link
+              to="/events"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <li>Events</li>
+            </Link>
           </ul>
         </div>
       </div>
     </div>
   );
 }
-
-export default Landingpage;

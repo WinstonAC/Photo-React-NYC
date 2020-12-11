@@ -1,0 +1,19 @@
+.flip {
+    display: flex;
+    align-items: space-around;
+    flex-direction: column;
+
+}
+
+.flip1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.flip2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}

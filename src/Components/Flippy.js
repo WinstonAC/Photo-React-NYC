@@ -7,8 +7,8 @@ render() {
     // .. return
     return (
   <Flippy
-    flipOnHover={false} // default false
-    flipOnClick={true} // default false
+    flipOnHover={true} // default false
+    flipOnClick={false} // default false
     flipDirection="horizontal" // horizontal or vertical
     ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
     //this.flippy.hover
@@ -19,6 +19,7 @@ render() {
     <FrontSide
       style={{
         backgroundColor: '#41669d',
+        src="https://imgur.com/XgQHU9M"
       }}
     >
       RICK

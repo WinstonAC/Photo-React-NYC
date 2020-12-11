@@ -1,18 +1,18 @@
 // About me.  Q and A one image matieral UI
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-// import "aboutme.css;";
+import "./aboutme.css";
 
-function Aboutme(props) {
+export default function Aboutme() {
   return (
     <div>
-      <head>
-        <title>About Me</title>
-      </head>
+      <header>
+        <h2 className="title">About Me</h2>
+      </header>
       <body>
         <main>
           <div className="container">
-            <img class="TextWrap"></img>
+            <img className="TextWrap"></img>
             <a href="https://imgur.com/KXqC0zz">
               {" "}
               <img
@@ -22,18 +22,18 @@ function Aboutme(props) {
             </a>
             <p>
               {" "}
-              Benjamin depicts the everyday life of New Yorker- he finds the
-              beauty in landscapes and arcitecture.
+              Benjamin depicts the everyday life of New Yorkers. He finds beauty
+              in landscapes and architecture.
             </p>
             <p>
-              Benjamin had an uncanny eye seeing the unseen the ignored of our
-              society. Once his camera comes out the stories he shoots come to
-              life.
+              Benjamin has an uncanny eye seeing the unseen and the ignored of
+              our society. Once his camera comes out, the stories he shoots come
+              to life.
             </p>
           </div>
         </main>
         <p2>
-          <h3 className="QA"> inspired</h3>
+          <h3 className="QA"> Q & A with our Photographer</h3>
           <ul>
             <li>
               WHO: I am from Rogersville, MO and I have lived in New York City
@@ -53,5 +53,3 @@ function Aboutme(props) {
     </div>
   );
 }
-
-export default Aboutme.js;

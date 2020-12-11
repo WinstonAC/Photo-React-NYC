@@ -1,0 +1,41 @@
+body {
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+    /* border: 5px solid #777777; */
+}
+
+.TextWrap {
+    margin: 10px;
+}
+
+img {
+    margin: 0px 0px 10px 10px;
+    width: 55%;
+    height: auto;
+    padding: 10px;
+    float: right;
+
+}
+
+.container {
+    padding: 0px 50px;
+    font-size: 22px;
+
+}
+
+.title {
+    color: black;
+    text-align: center;
+    font: 50px;
+}
+
+p {
+    color: black;
+    text-align: left;
+}
+
+p2 {
+    color: black;
+    text-align: left;
+}
