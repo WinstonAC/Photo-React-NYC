@@ -11,19 +11,19 @@ export default function Landingpage() {
         <div className="menu-container">
           <ul>
             <Link
-              to="/photolanding"
+              to="/Photolanding"
               style={{ textDecoration: "none", color: "black" }}
             >
               <li>Photogrpahy</li>
             </Link>
             <Link
-              to="/aboutme"
+              to="/Aboutme"
               style={{ textDecoration: "none", color: "black" }}
             >
               <li>About Me</li>
             </Link>
             <Link
-              to="/events"
+              to="/Events"
               style={{ textDecoration: "none", color: "black" }}
             >
               <li>Events</li>

@@ -5,6 +5,8 @@ class Carousel extends React.Component {
     // let encodedpic = encodeURI(pic);
     render() {
       return (
+    //     <Link to="/photolanding" style={{textDecoration: 'none',color:'black'}}>
+    //   </Link>
 
 <Carousel>
   <Carousel.Item>

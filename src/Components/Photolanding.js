@@ -2,7 +2,8 @@
 import React from "react";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
 
-import { Route, Switch } from "react-router-dom";
+
+import { Link, Route, Switch  } from "react-router-dom";
 import "./photolanding.css";
 
 class Photolanding extends React.Component {
@@ -11,6 +12,7 @@ class Photolanding extends React.Component {
     return (
       <div className="flip">
         <div className="flip1">
+        <Link to="/Photolanding/Places">
           <Flippy
             flipOnHover={true} // default false
             flipOnClick={false} // default false
@@ -33,6 +35,7 @@ class Photolanding extends React.Component {
             I chose these photos because they were the ones that propelled me into the photo world of street photography. These are some of my favorite portraits.
             </BackSide>
           </Flippy>
+        </Link>
 
           <Flippy
             flipOnHover={true} // default false

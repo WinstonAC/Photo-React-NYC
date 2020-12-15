@@ -1,6 +1,6 @@
 // About me.  Q and A one image matieral UI
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+// import { Route, Switch } from "react-router-dom";
 import "./aboutme.css";
 
 export default function Aboutme() {
