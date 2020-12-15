@@ -1,7 +1,11 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
+import Carousel from "react-bootstrap/Carousel";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link, Route, Switch } from "react-router-dom";
+import "./color.css"
 
-class Carousel extends React.Component {
+class Color extends React.Component {
     // let encodedpic = encodeURI(pic);
     render() {
       return (
@@ -9,7 +13,7 @@ class Carousel extends React.Component {
     //   </Link>
 
 <Carousel>
-  <Carousel.Item>
+  <Carousel.Item className ="C1">
     <img
       className="d-block w-100"
       src="holder.js/800x400?text=First slide&bg=373940"
@@ -20,14 +24,14 @@ class Carousel extends React.Component {
       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item>
+  <Carousel.Item className ="C1">
     <img
       className="d-block w-100"
       src="holder.js/800x400?text=Second slide&bg=282c34"
       alt="Third slide"
     />
 
-    <Carousel.Caption>
+    <Carousel.Caption className ="C1">
       <h3>Second slide label</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </Carousel.Caption>
@@ -39,7 +43,7 @@ class Carousel extends React.Component {
       alt="Third slide"
     />
 
-    <Carousel.Caption>
+    <Carousel.Caption className ="C1">
       <h3>Third slide label</h3>
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </Carousel.Caption>
@@ -49,4 +53,4 @@ class Carousel extends React.Component {
 );
 }
 }
-export default Carousel;
+export default Color;

@@ -1,13 +1,17 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
+import Carousel from "react-bootstrap/Carousel";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link, Route, Switch } from "react-router-dom";
+import "./people.css"
 
-class Carousel extends React.Component {
+class People extends React.Component {
     // let encodedpic = encodeURI(pic);
     render() {
       return (
 
 <Carousel>
-  <Carousel.Item>
+  <Carousel.Item className ="C1">
     <img
       className="d-block w-100"
       src="holder.js/800x400?text=First slide&bg=373940"
@@ -18,7 +22,7 @@ class Carousel extends React.Component {
       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item>
+  <Carousel.Item className ="C1">
     <img
       className="d-block w-100"
       src="holder.js/800x400?text=Second slide&bg=282c34"
@@ -30,7 +34,7 @@ class Carousel extends React.Component {
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item>
+  <Carousel.Item className ="C1">
     <img
       className="d-block w-100"
       src="holder.js/800x400?text=Third slide&bg=20232a"
@@ -47,4 +51,4 @@ class Carousel extends React.Component {
 );
 }
 }
-export default Carousel;
+export default People;

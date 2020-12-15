@@ -1,13 +1,17 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
+import Carousel from "react-bootstrap/Carousel";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link, Route, Switch } from "react-router-dom";
+import "./architecture.css"
 
-class Carousel extends React.Component {
+class Architecture extends React.Component {
     // let encodedpic = encodeURI(pic);
     render() {
       return (
 
 <Carousel>
-  <Carousel.Item>
+  <Carousel.Item className ="C1">
     <img
       className="d-block w-100"
       src="holder.js/800x400?text=First slide&bg=373940"
@@ -25,7 +29,7 @@ class Carousel extends React.Component {
       alt="Third slide"
     />
 
-    <Carousel.Caption>
+    <Carousel.Caption className ="C1">
       <h3>Second slide label</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </Carousel.Caption>
@@ -37,7 +41,7 @@ class Carousel extends React.Component {
       alt="Third slide"
     />
 
-    <Carousel.Caption>
+    <Carousel.Caption className ="C1">
       <h3>Third slide label</h3>
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </Carousel.Caption>
@@ -47,4 +51,4 @@ class Carousel extends React.Component {
 );
 }
 }
-export default Carousel;
+export default Architecture;
