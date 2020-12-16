@@ -1,4 +1,5 @@
 // import logo from './logo.svg';
+import React, { Component } from "react";
 import { Link, Route, Switch } from "react-router-dom";
 import Landingpage from "./Components/Landingpage";
 import Photolanding from "./Components/Photolanding";
@@ -11,41 +12,119 @@ import Color from "./Components/Color";
 import "./App.css";
 // import { useState } from "react";
 
-export default function App() {
-  // const [photolanding, setPhotolanding] = useState([]);
-  // const [aboutme, setAboutme] = useState([]);
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isLoaded: true,
+      photos: [],
+      collections: [],
+      people: [],
+      places: [],
+      architecture: [],
+      color: [],
+    };
+  }
 
-  return (
-    <div className="app">
-      <Link
-        to="/Landingpage"
-        style={{ textDecoration: "none", color: "black" }}
-      >
-        <h1>Benjamin White Photography </h1>
-      </Link>
+  async componentDidMount() {
+    let url = "https://photonyc.herokuapp.com/collections";
+    const collecitonsRes = await fetch(url)
+      .then((res) => res.json())
+      .then((collections) => this.setState({ collections: collections }));
 
-      <Switch>
-        <Route exact path="/Landingpage">
-          <Landingpage />
-        </Route>
+    let data = "https://photonyc.herokuapp.com/photos";
+    const photosRes = await fetch(data)
+      .then((res) => res.json())
+      .then((photos) => this.setState({ photos: photos }));
+    this.organizeData();
+    console.log(this.organizeData)
+  }
+  organizeData() {
+    let peopleData = [];
+    let placesData = [];
+    let architectureData = [];
+    let colorData = [];
 
-        <Route exact path="/Photolanding/Places" render={() => <Places />} />
-        <Route exact path="/Photolanding/People" render={() => <People />} />
-        <Route
-          exact
-          path="Photolanding/Architecture"
-          render={() => <Architecture />}
-        />
-        <Route exact path="Photolanding/Color" render={() => <Color />} />
+    for (let i = 0; i < this.state.photos.length; i++) {
+      console.log(this.state.photos[i])
+      if (this.state.photos[i].id == 1) {
+        peopleData.push(this.state.photos[i]);
+      } else if (this.state.photos[i].id == 2) {
+        placesData.push(this.state.photos[i]);
+      } else if (this.state.photos[i].id == 3) {
+        architectureData.push(this.state.photos[i]);
+        console.log(architectureData)
+      } else if (this.state.photos[i].id == 4) {
+        colorData.push(this.state.photos[i]);
+        console.log(colorData)
+      }
+      // console.log(peopleData)
+      // console.log(placesData)
+      // console.log(architectureData)
+      // console.log(colorData)
+      this.setState({
+        people: peopleData,
+        places: placesData,
+        architecture: architectureData,
+        color: colorData,
+      });
+    }
+  }
+  render() {
+    console.log(this.state.architecture);
+    console.log(this.state.color);
+    return (
+      <div className="app">
+        <Link
+          to="/Landingpage"
+          style={{ textDecoration: "none", color: "black" }}
+        >
+          <h1>Benjamin White Photography </h1>
+        </Link>
 
-        <Route exact path="/Photolanding">
-          <Photolanding />
-        </Route>
+        <Switch>
+          <Route exact path="/Landingpage">
+            <Landingpage />
+          </Route>
 
-        <Route exact path="/Aboutme">
-          <Aboutme />
-        </Route>
-      </Switch>
-    </div>
-  );
+          <Route
+            exact
+            path="/Photolanding/Places"
+            render={() => <Places photos={this.state.places} />}
+          />
+
+          <Route
+            exact
+            path="/Photolanding/People"
+            render={() => <People photos={this.state.people} />}
+          />
+
+          <Route
+            exact
+            path="Photolanding/Architecture"
+            render={() => <Architecture photos={this.state.architecture} />}
+          />
+          <Route
+            exact
+            path="Photolanding/Color"
+            render={() => <Color photos={this.state.color} />}
+          />
+
+          <Route exact path="/Photolanding">
+            <Photolanding />
+          </Route>
+
+          <Route exact path="/Aboutme">
+            <Aboutme />
+          </Route>
+
+          <Route exact path="/Events">
+            <Events />
+          </Route>
+        </Switch>
+      </div>
+    );
+  }
 }
+
+export default App;

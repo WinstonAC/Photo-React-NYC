@@ -1,3 +1,16 @@
 import React from "react";
-// import { Route, Switch } from "react-router-dom";
-// import "./.css";
+import { Link, Route, Switch } from "react-router-dom";
+import "./events.css";
+
+export default function Events() {
+    console.log("hello")
+  return(
+  
+
+  <div className="bigi">
+    <h1>hello</h1>
+
+  </div>
+  )
+}
+
