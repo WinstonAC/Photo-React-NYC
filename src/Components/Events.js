@@ -2,6 +2,7 @@ import React from "react";
 import { Link, Route, Switch } from "react-router-dom";
 import "./events.css";
 import EmailForm from "./EmailForm"
+import Mail from "./Mail";
 
 export default function Events() {
     console.log("hello")
@@ -10,7 +11,7 @@ export default function Events() {
     
   <div className="bigi">
 
-  <div className="EF"><EmailForm className="renform"></EmailForm></div>
+  <div className="EF"><Mail className="renform"></Mail></div>
    
 
   </div>
