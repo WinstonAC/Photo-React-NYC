@@ -9,7 +9,9 @@ export default function Events() {
   
     
   <div className="bigi">
-   <EmailForm></EmailForm>
+
+  <div className="EF"><EmailForm className="renform"></EmailForm></div>
+   
 
   </div>
   )

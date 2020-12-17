@@ -1,7 +1,20 @@
-.bigi{
-background-image: url("https://i.imgur.com/tg06Fjn.jpg");
-background-size: cover;
-background-position: center;
-height:100vh;
-opacity: .3;
+.bigi::before {
+    background-image: url("https://i.imgur.com/tg06Fjn.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    opacity: .3;
+}
+
+.EF {
+    height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 50px;
+}
+
+.renform{
+opacity: 1;
+
 }
