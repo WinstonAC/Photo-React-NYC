@@ -1,4 +1,32 @@
-.C1{
+.C1 {
     max-height: 50vh;
+    width: 50vw;
 
 }
+
+.carouselBody {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 15px;
+    color: gold;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: start;
+
+}
+
+.date {
+    font-size: 15px;
+    color: gold;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: start;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .title {
+      Color: lightblue;
+    }
+  }

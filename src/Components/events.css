@@ -1,3 +1,7 @@
 .bigi{
-background-image: url("https://i.imgur.com/J0bESYp.jpg");
+background-image: url("https://i.imgur.com/tg06Fjn.jpg");
+background-size: cover;
+background-position: center;
+height:100vh;
+opacity: .3;
 }

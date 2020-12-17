@@ -13,20 +13,18 @@ class Places extends React.Component {
   render() {
     console.log(this.props);
     return (
-      <div>
-        <Carousel>
+      <div className="carouselBody">
+        <Carousel className="C1">
           {this.props.photos.map((photo, i) => (
-            <Carousel.Item key={i} className="C1">
+            <Carousel.Item key={i}>
               <img
                 className="d-block w-100 img-fluid"
                 src={photo.photo_url}
                 alt="First slide"
               />
               <Carousel.Caption className="text-left">
-                <h3>{photo.title}</h3>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
+                <span className="title">{photo.title}</span>
+                <span className="date">{photo.date}</span>
               </Carousel.Caption>
             </Carousel.Item>
           ))}

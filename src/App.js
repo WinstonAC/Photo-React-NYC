@@ -47,16 +47,19 @@ class App extends Component {
 
     for (let i = 0; i < this.state.photos.length; i++) {
       console.log(this.state.photos[i])
-      if (this.state.photos[i].id == 1) {
+      if (this.state.photos[i].collection == 1) {
         peopleData.push(this.state.photos[i]);
-      } else if (this.state.photos[i].id == 2) {
+      }
+      if (this.state.photos[i].collection == 2) {
         placesData.push(this.state.photos[i]);
-      } else if (this.state.photos[i].id == 3) {
+      } 
+      if (this.state.photos[i].collection == 3) {
         architectureData.push(this.state.photos[i]);
-        console.log(architectureData)
-      } else if (this.state.photos[i].id == 4) {
+      //   console.log(architectureData)
+      } 
+      if (this.state.photos[i].collection == 4) {
         colorData.push(this.state.photos[i]);
-        console.log(colorData)
+      //   console.log(colorData)
       }
       // console.log(peopleData)
       // console.log(placesData)
@@ -71,8 +74,10 @@ class App extends Component {
     }
   }
   render() {
+    console.log(this.state.photos);
     console.log(this.state.architecture);
     console.log(this.state.color);
+    console.log(this.state.people)
     return (
       <div className="app">
         <Link
@@ -101,12 +106,12 @@ class App extends Component {
 
           <Route
             exact
-            path="Photolanding/Architecture"
+            path="/Photolanding/Architecture"
             render={() => <Architecture photos={this.state.architecture} />}
           />
           <Route
             exact
-            path="Photolanding/Color"
+            path="/Photolanding/Color"
             render={() => <Color photos={this.state.color} />}
           />
 
