@@ -12,7 +12,7 @@ export default function Landingpage() {
           <ul>
             <Link
               to="/Photolanding"
-              style={{ textDecoration: "none", color: "black" }}
+              style={{ hover:"red", textDecoration: "none", color: "black" }}
             >
               <li>Photogrpahy</li>
             </Link>

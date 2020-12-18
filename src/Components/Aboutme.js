@@ -38,15 +38,22 @@ export default function Aboutme() {
           <h3 className="QA"> Q & A with our Photographer</h3>
           <ul>
             <li>
-              WHO: I am from Rogersville, MO and I have lived in New York City
+            <h6>WHO:</h6>
+              I am from Rogersville, MO and I have lived in New York City
               for seven years.
             </li>
-            <li>What:I have been taking photos for about 5 years.</li>
             <li>
-              Why: I get inspiration from a lot of things. In New York
-              inspiration is never endless. From the hustle and bustle of the 9
-              to 5ers, to the unfortunate homeless people of our city, and to
-              the people that sit still. Lighting and shadows are mainly what
+            <h6>WHAT:</h6>I have been taking photos for about 5 years.</li>
+            <li>
+            <h6>WHY:</h6>
+              I get inspiration from a lot of things. In New York
+              inspiration is never endless.  
+              <br/>
+              From the hustle and bustle of the 9
+              to 5ers, to the unfortunate homeless people
+              <br/>
+              of our city, and to the people that sit still. Lighting and shadows are mainly what
+              <br/>
               catches my eye though.{" "}
             </li>
           </ul>

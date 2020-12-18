@@ -5,7 +5,7 @@
 }
 
 .bigi {
-    background-image: url("https://i.imgur.com/tg06Fjn.jpg");
+    background-image: url("https://i.imgur.com/tav7dKA.jpg");
     background-position: center;
     background-size: cover;
     /* opacity: .5; */
@@ -26,7 +26,10 @@
 }
 
 .contact {
+    padding-top: 15%;
     margin-top: 100px;
+    color:white;
+    font-size: large;
 }
 
 .top {
@@ -34,3 +37,4 @@
     justify-content: space-around;
     margin-top: 50px;
 }
+

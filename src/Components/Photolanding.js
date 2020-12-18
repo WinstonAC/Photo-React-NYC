@@ -29,7 +29,7 @@ class Photolanding extends React.Component {
                   backgroundSize: "cover",
                 }}
               ></FrontSide>
-              <BackSide style={{ backgroundColor: "black" }}>
+              <BackSide style={{ backgroundColor: "black", color: "white",  }}>
                 I chose these photos because they were the ones that propelled
                 me into the photo world of street photography. These are some of
                 my favorite portraits.
@@ -56,7 +56,7 @@ class Photolanding extends React.Component {
                   backgroundSize: "cover",
                 }}
               ></FrontSide>
-              <BackSide style={{ backgroundColor: "black" }}>
+              <BackSide style={{ backgroundColor: "black", color: "white",  }}>
                 These photos are some of my favorite places in New York. The
                 train is never dull, central park for peace, Coney island for
                 fun, and the rest is me walking around.
@@ -85,7 +85,7 @@ class Photolanding extends React.Component {
                     backgroundSize: "cover",
                   }}
                 ></FrontSide>
-                <BackSide style={{ backgroundColor: "black" }}>
+                <BackSide style={{ backgroundColor: "black", color: "white" }}>
                   I think architecture was my first love. I wanted to go to
                   school to become an architect but chose a different route. I
                   chose these because its a little mix of both street style and
@@ -117,7 +117,7 @@ class Photolanding extends React.Component {
                     backgroundSize: "cover",
                   }}
                 ></FrontSide>
-                <BackSide style={{ backgroundColor: "black" }}>
+                <BackSide style={{ backgroundColor: "black", color: "white", }}>
                   I prefer black and white, but I have been told these are my
                   best color photos to date. that is why I chose them.
                 </BackSide>
