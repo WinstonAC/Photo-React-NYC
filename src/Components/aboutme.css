@@ -10,7 +10,7 @@ body {
 }
 
 img {
-    margin: 0px 0px 10px 10px;
+    margin:  -100px 0px 10px 100px;
     width: 55%;
     height: auto;
     padding: 10px;
@@ -23,19 +23,17 @@ img {
     font-size: 22px;
 
 }
+.quote{
+    margin-top: 100px;
+    margin-left: -50px; 
 
-.title {
-    color: black;
-    text-align: center;
-    font: 50px;
 }
+
 
 p {
     color: black;
     text-align: left;
 }
-
-p2 {
-    color: black;
-    text-align: left;
+.ct{
+    padding-top: 200px;
 }

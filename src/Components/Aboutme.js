@@ -7,7 +7,7 @@ export default function Aboutme() {
   return (
     <div>
       <header>
-        <h2 className="title">About Me</h2>
+        <h2 className="title"></h2>
       </header>
       <body>
         <main>
@@ -20,19 +20,21 @@ export default function Aboutme() {
                 title="source: imgur.com"
               />
             </a>
-            <p>
-              {" "}
-              Benjamin depicts the everyday life of New Yorkers. He finds beauty
-              in landscapes and architecture.
-            </p>
-            <p>
-              Benjamin has an uncanny eye seeing the unseen and the ignored of
-              our society. Once his camera comes out, the stories he shoots come
-              to life.
-            </p>
+            <div className="quote">
+              <p>
+                {/* {" "} */}
+                "Benjamin depicts the everyday life of New Yorkers. He finds
+                beauty in landscapes and architecture.
+              </p>
+              <p>
+                Benjamin has an uncanny eye seeing the unseen and the ignored of
+                our society. Once his camera comes out, the stories he shoots
+                come to life.""
+              </p>
+            </div>
           </div>
         </main>
-        <p2>
+        <p className="ct">
           <h3 className="QA"> Q & A with our Photographer</h3>
           <ul>
             <li>
@@ -48,7 +50,7 @@ export default function Aboutme() {
               catches my eye though.{" "}
             </li>
           </ul>
-        </p2>
+        </p>
       </body>
     </div>
   );

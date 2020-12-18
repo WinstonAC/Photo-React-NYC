@@ -1,20 +1,36 @@
 .bigi {
+    position: relative;
+
+
+}
+
+.bigi {
     background-image: url("https://i.imgur.com/tg06Fjn.jpg");
-    background-size: cover;
     background-position: center;
-    height: 100vh;
-    opacity: .3;
+    background-size: cover;
+    /* opacity: .5; */
 }
 
 .EF {
     height: 80vh;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    margin-top: 25px;
     margin-right: 50px;
+
 }
 
-.renform{
-opacity: 1;
+.renform {
+    opacity: 1;
 
+}
+
+.contact {
+    margin-top: 100px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
 }
