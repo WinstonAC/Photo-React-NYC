@@ -27,7 +27,7 @@ export default function Aboutme() {
                 beauty in landscapes and architecture.
               </p>
               <p>
-                Benjamin has an uncanny eye seeing the unseen and the ignored of
+                Benjamin has an uncanny eye seeing the unseen and the ignored in
                 our society. Once his camera comes out, the stories he shoots
                 come to life.""
               </p>
