@@ -14,7 +14,7 @@ export default function Landingpage() {
               to="/Photolanding"
               style={{ hover:"red", textDecoration: "none", color: "black" }}
             >
-              <li>Photogrpahy</li>
+              <li>Photography</li>
             </Link>
             <Link
               to="/Aboutme"
